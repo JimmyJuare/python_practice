@@ -5,17 +5,18 @@ class Solution(object):
         :rtype: int
         """
         nums = list(s)
+        romanNums = dict({'I':1, 'V':5, 'X':10})
+        
         for i in range(len(nums)):
-            print(nums[i])
+            print('nums', nums[i])
         
         print(nums)
-        print('length', int(len(nums) - 1))
+        print('length', int(len(nums)))
         
-        romanNums = dict({1:'I'})
         if int(s) in romanNums:
-            return True
+            return romanNums.get(int(s))
         else:
             return False
 
 obj = Solution()
-print(obj.romanToInt('1454'))
+print(obj.romanToInt('1'))
