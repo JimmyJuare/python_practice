@@ -5,14 +5,11 @@ class Solution(object):
         :rtype: bool
         """
 
-        j = 0
-        for i in range(len(nums)):
-            print(nums[i])
-            for j in range(i + 1, len(nums)):
-                print("j", nums[j])
-                
-                if nums[i] == nums[j]:
-                    return True
+        nums.sort()
+
+        for i in range(len(nums) - 1):
+            if nums[i] == nums[i + 1]:
+                return True
 
         return False
 
