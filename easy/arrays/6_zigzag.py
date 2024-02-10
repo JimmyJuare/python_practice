@@ -36,3 +36,27 @@ making list_b = [1, 0]
 otherwise append 0 to the corresponding elements for list_b
 
 """
+
+
+class Solution(object):
+    def zigzag(self, a):
+
+        res = []
+        for i in range(len(a) - 2):
+            
+            x, y, z = a[i], a[i + 1], a[i + 2]
+            
+            if x < y > z or x > y < z:
+                
+                res.append(1)
+                
+            else: 
+                
+                res.append(0)
+
+        return res
+
+
+obj = Solution()
+b = [1,2,1,3,4,8,7]
+print(obj.zigzag(b))

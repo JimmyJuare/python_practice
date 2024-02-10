@@ -6,8 +6,10 @@ class Solution(object):
         """
 
         nums.sort()
-
+        
+        print(nums)
         for i in range(len(nums) - 1):
+            
             if nums[i] == nums[i + 1]:
                 return True
 
@@ -15,5 +17,5 @@ class Solution(object):
 
 
 obj = Solution()
-newList = [2, 14, 18, 22, 22]
+newList = [22, 14, 18, 2, 22]
 print(obj.containsDuplicate(newList))
