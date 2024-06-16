@@ -23,4 +23,4 @@ class Solution(object):
         return res
 
 obj = Solution()
-print(obj.romanToInt('IV'))
+print(obj.romanToInt('XXVII'))
