@@ -1,0 +1,5 @@
+def largest_number(lst):
+    return max(lst)
+
+# Example usage
+print(largest_number([3, 6, 2, 8, 4]))  # Output: 8
